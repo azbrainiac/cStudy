@@ -13,7 +13,7 @@ int main()
 
 	char food[6];
 	printf("Введите еду: ");
-	fgets(food, 6, stdin);
+	fgets(	food, 6, stdin);
 	printf("Имя: %s\n", food);
 
 	return 0;

@@ -13,6 +13,17 @@ void find_track(char search_for[])
 	}
 }
 
+void print_reverse(char *s)
+{
+	size_t len = strlen(s);
+	char *t = s + len - 1;
+	while(t >= s){
+		printf("%c", *t);
+		t = t - 1;
+	}
+	puts("");
+}
+
 int main()
 {
 	char search_for[80];
@@ -21,5 +32,6 @@ int main()
 	search_for[strlen(search_for)-1] = '\0';
 	find_track(search_for);
 	printf("%s\n", search_for);
+	print_reverse(search_for);
 	return 0;
 }
